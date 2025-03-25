@@ -1,0 +1,320 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+/* Reset and base styles  */
+* {
+    
+	padding: 0px;
+	margin: 0px;
+	border: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+    color:inherit;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 67px;
+line-height: 76px;
+color: #000000;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+body, html {
+    height: 100%;
+    height: 20000px;
+    overflow-x: hidden;
+    background-image: url('/src/img/bodyBackground.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+$yellow-color : rgb(252, 244, 143);
+
+.stella {
+
+    // .stella__container
+
+    &__container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    &__text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 65px;
+        color: #000000;
+        padding-top: 390px;
+        
+    
+        span{
+            background-color: $yellow-color;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+.stella-header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    // .stella-header__block
+
+    &__block {
+        padding: 25px;
+        padding-left: 60px;
+      
+    }
+
+    // .stella-header__items
+
+    &__items {
+        display: flex;
+        gap: 30px;
+        
+    }
+
+    // .stella-header__item
+
+    &__item {
+    }
+
+    // .stella-header__tel
+    .stella-header__tel-block{
+        padding: 25px;
+        background-color: $yellow-color;
+    }
+    &__tel {
+        padding-right: 150px;
+       
+    }
+}
+
+.stella-main {
+    max-height: 746px;
+    padding-top: 72px;
+    color: white;
+    background-image: url('/src/img/background.jpg');
+    height: 750px;
+ /*    height: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &__text {
+      
+    }
+
+    // .stella-main__header
+
+    &__header {
+        /* Юридическая защита бизнеса */
+
+font-style: normal;
+font-weight: 300;
+font-size: 67px;
+line-height: 76px;
+max-width: 500px;
+color: #FFFFFF;
+padding-top: 67px;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    }
+ 
+
+    &__services {
+        padding-top: 135px;
+       /*  display: flex; */
+    }
+
+    // .stella-main__items
+
+    &__items {
+        display: grid;
+        grid-template: repeat(2, 1fr)/ repeat(3, 1fr);
+        color: white;
+        max-width: 383px;
+
+    }
+
+    // .stella-main__item
+
+    &__item {
+        cursor: pointer;
+        color: white;
+        display: flex;
+        background: #272727e1;
+        flex-direction: column;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 126.19%;
+        padding-left: 42px;
+        padding-top: 47px;
+        padding-bottom: 24px;
+        padding-right: 46px;
+        gap: 22px;
+        transition: all 0.3s ease;
+    border: 1px solid black;
+        &:hover{
+            img{
+               color:  $yellow-color;
+            }
+        }
+        a{
+        width: 321px;
+        margin-bottom: auto;
+        }
+        img{
+            height: 56px;
+            width: 56px;
+        }
+        &:last-child{
+            border: none;
+            max-width: 10000px;
+            margin-right: -1500px;
+            background-color: #fff;
+            color: black;
+            font-weight: 400;
+            font-size: 35px;
+            &:hover{
+                background-color: $yellow-color;
+            }
+        }
+    }
+}
+
+
+
+.stella-product {
+    padding-top: 93px;
+    // .stella-product__title
+
+    &__title {
+    }
+
+    // .stella-product__line
+
+    &__line {
+        margin-top: 40px;
+        background-color: #C4C4C4;
+        height: 1px;
+        span{
+            display: block;
+            background-color: #646464;
+            height: 6px;
+            width: 90px;
+        }
+    }
+
+    // .stella-product__services
+    &__body{
+
+    padding-top: 103px;
+    }
+
+    &__services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        background: #353535;
+        color: #FFFFFF;
+      
+    }
+
+    // .stella-product__items
+
+    &__items {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 113.19%;
+        display: block;
+        padding-left: 49px;
+        padding-bottom: 262px;
+        padding-top: 53px;
+    }
+}
