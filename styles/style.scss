@@ -105,18 +105,48 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
   }
 
 
 
 $yellow-color : rgb(252, 244, 143);
 
-.stella {
 
+.card-color1{
+    background-color: #272727;
+}
+.card-color2{
+    background-color: #353535;
+}
+.card-color3 {
+    background-color: $yellow-color;
+    span{
+        color: black;
+    }
+      
+   
+   
+    
+}
+.card-color4{
+    background-color: #353535;
+}
+.card-color5{
+    background-color: #353535;
+}
+.card-color6{
+    background-color: #424242;
+}
+
+
+.stella {
     // .stella__container
 
     &__container {
-        max-width: 1440px;
+        max-width: 1460px;
         margin: 0 auto;
     }
     &__text {
@@ -316,5 +346,366 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         padding-left: 49px;
         padding-bottom: 262px;
         padding-top: 53px;
+        position: relative;
+        img{
+            position: absolute;
+            left: 42px;
+            bottom: 50px;
+        }
+    }
+}
+
+.stella-prices {
+    padding-top: 90px;
+    
+    // .stella-prices__body
+
+    &__body {
+
+        padding-top: 90px;
+        display: flex;   
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    
+    // .stella-prices__item
+
+    &__item {
+        height: 311px;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    &__item-body{
+        flex-grow: 1;
+        flex-shrink: 1;
+        position: relative;
+        padding-left: 50px;
+        padding-bottom: 126px;
+        background-color: #fff;
+        padding-right: 10px;
+    }
+    // .stella-prices__num
+
+    &__num {
+        margin-top: -60px;
+font-weight: 300;
+font-size: 104px;
+color: #000000;
+    }
+
+    // .stella-prices__text
+
+    &__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 126.19%;
+    color: #4D4D4D;
+    max-width: 400px;
+    }
+
+    // .stella-prices__cross
+
+    &__cross {
+        height: 56px;
+        width: 56px;
+        border: 1px solid black;
+        border-radius: 50%;
+        position: relative;
+        position: absolute;
+        left: 39px;
+        bottom: 25px;
+        cursor: pointer;
+        
+        &:before{
+            content: "";
+            transition: all 0.5s ease;
+            width: 1px;
+            height: 24px;
+            display: block;
+            background: #1d1d1b;
+            position: absolute;
+            left: 25px;
+            top: 14px;
+    
+        }
+        &:after{
+            content: "";
+            transition: all 0.5s ease;
+            width: 24px;
+            height: 1px;
+            display: block;
+            background: #1d1d1b;
+            position: absolute;
+            left: 14px;
+            top: 25px;
+        }
+      
+         
+    
+    }
+    
+    .cross-active{
+        &:before {
+            transform: rotate(45deg);
+                }
+        &:after {
+            transform: rotate(45deg);
+                }
+
+    }
+
+    &__price{
+        overflow: hidden;
+        width: 0px;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 108.69%;
+        color: #000000;
+        background: $yellow-color;
+        transition: all 0.7s ease;
+        white-space: nowrap;
+    }
+
+    .stella-prices__price-active{
+        display: block;
+         width: 272px;
+         padding-top: 60px;
+        padding-left: 36px;
+        padding-right: 30px;
+    }
+}
+
+
+
+
+.stella-form {
+    margin-top: 160px;
+    background-color: #272727;
+    // .stella-form__container
+
+    &__container {
+        padding-top: 88px;
+        padding-bottom: 75px;
+    }
+
+    // .stella-form__title
+
+    &__title {
+        color: #fff !important;
+        padding-bottom: 47px;
+    }
+
+    // .stella-form__body
+
+    &__body {
+        display: flex;
+        gap: 24px;
+    }
+    // .stella-form__name
+
+    &__input {
+        border: 1px solid #494949;
+        padding-top: 32px;
+        padding-bottom: 40px;
+        padding-left: 39px;
+        max-width: 440px;
+        width: 100%;
+        max-height: 100px;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 126.19%;
+        color: #FFFFFF;
+        &::placeholder{
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 126.19%;
+        color: #FFFFFF;
+        }
+    }
+    
+
+    // .stella-form__btn
+
+    &__btn {
+        background-color: $yellow-color;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 126.19%;
+        text-align: center;
+        color: #000000;
+        padding-top: 32px;
+        padding-bottom: 38px;
+        max-width: 532px;
+        width: 100%;
+    }
+
+    // .stella-form__text
+
+    &__text {
+        padding-top: 30px;
+        color: #949494;
+        font-size: 18px;
+        line-height: 126.19%;
+
+    }
+}
+
+
+.stella-employees {
+    padding-top: 80px;
+    // .stella-employees__header
+
+    &__header {
+        padding-bottom: 60px;
+    }
+
+    &__container{
+        background-color: #272727;
+        max-height: 1000px;
+    }
+
+    // .stella-employees__header-text
+
+    &__header-text {
+    }
+
+    // .stella-employees__line
+
+    &__line {
+        margin-top: 40px;
+        
+        height: 1px;
+        span{
+            display: block;
+            background-color: #646464;
+            height: 6px;
+            width: 255px;
+        }
+        
+    }
+
+    // .stella-employees__body
+
+    &__body {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1460px;
+        
+    }
+
+    // .stella-employees__main
+
+    &__main {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    // .stella-employees__text
+
+    &__text {
+        max-width: 630px;
+        padding-bottom: 66px;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        justify-content: flex-end;
+    }
+
+    // .stella-employees__title
+
+    &__title {
+        display: flex;
+        gap: 80px;
+    }
+
+    // .stella-employees__post
+
+    &__post {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 113.19%;
+    color: #FFFFFF;
+
+
+    }
+
+    // .stella-employees__name
+
+    &__name {
+        white-space: nowrap;
+        z-index: 999;
+        color: $yellow-color;
+    }
+
+    // .stella-employees__info
+
+    &__info {
+        max-width: 494px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 128.69%;
+        color: #898989;
+        span{
+            color: $yellow-color;
+            display: block;
+            margin-top: 30px;
+        }
+
+    }
+
+    // .stella-employees__bigimg
+
+    &__bigimg {
+        display: block;
+        height: 1000px;
+        width: 800px;
+    }
+
+    // .stella-employees__side
+
+    &__side {
+        
+    }
+
+    // .stella-employees__items
+
+    &__items {
+        width: 250px;
+        margin-right: -250px;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        max-height: 1000px;
+      
+    }
+
+    // .stella-employees__item
+
+    &__item {
+        cursor: pointer;
+        border-top: 1px solid #4E4E4E;
+        border-left: 1px solid #4E4E4E;
+        padding: 46px;
+        transition: all 0.3s ease;
+        &:hover{
+            background-color: $yellow-color;
+        }
+    }
+
+    .item__active{
+        background-color: $yellow-color; 
+    }
+    // .stella-employees__face
+
+    &__face {
+        
+       border-radius: 50%;
+        width: 157px;
+        height: 157px;
     }
 }
