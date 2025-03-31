@@ -133,6 +133,19 @@ body, html {
   background-color: #424242;
 }
 
+[class$=__line] {
+  margin-top: 40px;
+  background-color: #C4C4C4;
+  margin-right: -2000px;
+  height: 1px;
+}
+[class$=__line] span {
+  display: block;
+  background-color: #646464;
+  height: 6px;
+  width: 90px;
+}
+
 .stella__container {
   max-width: 1460px;
   margin: 0 auto;
@@ -177,7 +190,7 @@ body, html {
   max-height: 746px;
   padding-top: 72px;
   color: white;
-  background-image: url("/src/img/background.jpg");
+  background-image: url("./src/img/background.jpg");
   height: 750px;
   /*    height: 100%; */
   background-position: center;
@@ -248,17 +261,6 @@ body, html {
 
 .stella-product {
   padding-top: 93px;
-}
-.stella-product__line {
-  margin-top: 40px;
-  background-color: #C4C4C4;
-  height: 1px;
-}
-.stella-product__line span {
-  display: block;
-  background-color: #646464;
-  height: 6px;
-  width: 90px;
 }
 .stella-product__body {
   padding-top: 103px;
@@ -455,14 +457,7 @@ body, html {
   background-color: #272727;
   max-height: 1000px;
 }
-.stella-employees__line {
-  margin-top: 40px;
-  height: 1px;
-}
 .stella-employees__line span {
-  display: block;
-  background-color: #646464;
-  height: 6px;
   width: 255px;
 }
 .stella-employees__body {
@@ -539,4 +534,43 @@ body, html {
   border-radius: 50%;
   width: 157px;
   height: 157px;
+}
+
+.stella-case__header {
+  padding-left: 1300px;
+}
+.stella-case__nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 120px;
+  align-items: center;
+  gap: 37px;
+}
+.stella-case__arrow-back {
+  background: #282828;
+  padding: 20px;
+  border-radius: 50%;
+}
+.stella-case__page {
+  font-weight: 300;
+  font-size: 37px;
+  line-height: 113.19%;
+  color: #000000;
+}
+.stella-case__arrow-forward {
+  background: #282828;
+  padding: 20px;
+  border-radius: 50%;
+}
+.stella-case__items {
+  display: flex;
+  overflow: hidden;
+}
+.stella-case__item {
+  scrollbar-width: none;
+  flex-shrink: 0;
+  flex: 1 0 25%;
+}
+.stella-case__arrow img {
+  border: none;
 }

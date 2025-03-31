@@ -141,6 +141,19 @@ $yellow-color : rgb(252, 244, 143);
     background-color: #424242;
 }
 
+[class$="__line"]{
+    margin-top: 40px;
+    background-color: #C4C4C4;
+    margin-right: -2000px;
+    height: 1px;
+    span{
+        display: block;
+        background-color: #646464;
+        height: 6px;
+        width: 90px;
+    }
+}
+
 
 .stella {
     // .stella__container
@@ -207,7 +220,7 @@ $yellow-color : rgb(252, 244, 143);
     max-height: 746px;
     padding-top: 72px;
     color: white;
-    background-image: url('/src/img/background.jpg');
+    background-image: url('./src/img/background.jpg');
     height: 750px;
  /*    height: 100%; */
     background-position: center;
@@ -308,15 +321,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     // .stella-product__line
 
     &__line {
-        margin-top: 40px;
-        background-color: #C4C4C4;
-        height: 1px;
-        span{
-            display: block;
-            background-color: #646464;
-            height: 6px;
-            width: 90px;
-        }
+
     }
 
     // .stella-product__services
@@ -577,13 +582,7 @@ color: #000000;
     // .stella-employees__line
 
     &__line {
-        margin-top: 40px;
-        
-        height: 1px;
         span{
-            display: block;
-            background-color: #646464;
-            height: 6px;
             width: 255px;
         }
         
@@ -707,5 +706,109 @@ color: #000000;
        border-radius: 50%;
         width: 157px;
         height: 157px;
+    }
+}
+
+
+.stella {
+
+    // .stella_case
+
+    &_case {
+    }
+}
+.stella-case {
+
+    // .stella-case__header
+
+    &__header {
+        padding-left: 1300px;
+    }
+
+    // .stella-case__title
+
+    &__title {
+    }
+
+    // .stella-case__line
+
+    &__line {
+    }
+
+    // .stella-case__cases
+
+    &__cases {
+    }
+
+    // .stella-case__nav
+
+    &__nav {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 120px;
+        align-items: center;
+        gap: 37px;
+       
+    }
+
+    // .stella-case__arrow-back
+
+    &__arrow-back {
+        background: #282828;
+        padding: 20px;
+        border-radius: 50%;
+    }
+
+    // .stella-case__page
+
+    &__page {
+        font-weight: 300;
+        font-size: 37px;
+        line-height: 113.19%;
+        color: #000000;
+
+
+    }
+
+    // .stella-case__arrow-forward
+
+    &__arrow-forward {
+        background: #282828;
+        padding: 20px;
+        border-radius: 50%;
+    }
+
+    // .stella-case__items
+
+    &__items {
+        display: flex;
+        overflow: hidden;
+    }
+
+    // .stella-case__item
+
+    &__item {
+        scrollbar-width: none;
+        flex-shrink: 0;
+        flex: 1 0 25%;
+    }
+
+    // .stella-case__img
+
+    &__img {
+    }
+
+    // .stella-case__text
+
+    &__text {
+    }
+
+    // .stella-case__arrow
+
+    &__arrow {
+        
+        img{
+            border: none;
+        }
     }
 }
