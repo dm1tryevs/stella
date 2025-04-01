@@ -8,8 +8,6 @@ const product = document.querySelector('.stella-product__title');
 const cases = document.querySelector('.stella-case__title');
 const team = document.querySelector('.stella-employees__header-text');
 const contacts = document.querySelector('.stella-info__map');
-console.log(contacts.getBoundingClientRect());
-console.log(cases.getBoundingClientRect().top);
 function scrollToElement (e){
     if(!e.target.dataset.scroll) return;
     e.preventDefault()

@@ -186,7 +186,7 @@ body, html {
 }
 
 .stella-main {
-  max-height: 746px;
+  min-height: 100vh;
   padding-top: 72px;
   color: white;
   background-image: url("../src/img/background.jpg");
@@ -195,6 +195,7 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 .stella-main__header {
   /* Юридическая защита бизнеса */
@@ -207,11 +208,9 @@ body, html {
   padding-top: 67px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.stella-main__services {
-  padding-top: 135px;
-  /*  display: flex; */
-}
 .stella-main__items {
+  position: absolute;
+  bottom: -260px;
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(3, 1fr);
   color: white;
@@ -488,7 +487,7 @@ body, html {
 }
 .stella-employees__name {
   white-space: nowrap;
-  z-index: 999;
+  z-index: 1;
   color: #fcf48f;
 }
 .stella-employees__info {
@@ -763,4 +762,68 @@ body, html {
 .stella-footer__policy {
   font-weight: 400;
   font-size: 25px;
+}
+
+.stella-modal {
+  display: none;
+  min-height: 100vh;
+  min-width: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.stella-modal__close {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.stella-modal__close:before {
+  content: "";
+  transition: all 0.5s ease;
+  width: 1px;
+  height: 40px;
+  display: block;
+  background: #1d1d1b;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 20px;
+  top: 0;
+}
+.stella-modal__close:after {
+  content: "";
+  transition: all 0.5s ease;
+  width: 40px;
+  height: 1px;
+  display: block;
+  background: #1d1d1b;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 20px;
+}
+.stella-modal__content {
+  position: relative;
+  flex-direction: column;
+  background-color: #fff;
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  padding: 55px;
+}
+.stella-modal__title {
+  padding-bottom: 80px;
+}
+.stella-modal__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 167.19%;
+  color: #4D4D4D;
 }
