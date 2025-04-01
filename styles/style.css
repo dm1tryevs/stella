@@ -95,7 +95,6 @@ legend {
 
 body, html {
   height: 100%;
-  height: 20000px;
   overflow-x: hidden;
   background-image: url("../src/img/bodyBackground.jpg");
   background-position: center;
@@ -115,7 +114,7 @@ body, html {
 }
 
 .card-color3 {
-  background-color: rgb(252, 244, 143);
+  background-color: #fcf48f;
 }
 .card-color3 span {
   color: black;
@@ -160,7 +159,7 @@ body, html {
   padding-top: 390px;
 }
 .stella__text span {
-  background-color: rgb(252, 244, 143);
+  background-color: #fcf48f;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -180,7 +179,7 @@ body, html {
 }
 .stella-header .stella-header__tel-block {
   padding: 25px;
-  background-color: rgb(252, 244, 143);
+  background-color: #fcf48f;
 }
 .stella-header__tel {
   padding-right: 150px;
@@ -236,7 +235,7 @@ body, html {
   border: 1px solid black;
 }
 .stella-main__item:hover img {
-  color: rgb(252, 244, 143);
+  color: #fcf48f;
 }
 .stella-main__item a {
   width: 321px;
@@ -256,7 +255,7 @@ body, html {
   font-size: 35px;
 }
 .stella-main__item:last-child:hover {
-  background-color: rgb(252, 244, 143);
+  background-color: #fcf48f;
 }
 
 .stella-product {
@@ -375,7 +374,7 @@ body, html {
   font-size: 48px;
   line-height: 108.69%;
   color: #000000;
-  background: rgb(252, 244, 143);
+  background: #fcf48f;
   transition: all 0.7s ease;
   white-space: nowrap;
 }
@@ -429,7 +428,7 @@ body, html {
   color: #FFFFFF;
 }
 .stella-form__btn {
-  background-color: rgb(252, 244, 143);
+  background-color: #fcf48f;
   font-weight: 500;
   font-size: 28px;
   line-height: 126.19%;
@@ -490,7 +489,7 @@ body, html {
 .stella-employees__name {
   white-space: nowrap;
   z-index: 999;
-  color: rgb(252, 244, 143);
+  color: #fcf48f;
 }
 .stella-employees__info {
   max-width: 494px;
@@ -500,7 +499,7 @@ body, html {
   color: #898989;
 }
 .stella-employees__info span {
-  color: rgb(252, 244, 143);
+  color: #fcf48f;
   display: block;
   margin-top: 30px;
 }
@@ -525,10 +524,10 @@ body, html {
   transition: all 0.3s ease;
 }
 .stella-employees__item:hover {
-  background-color: rgb(252, 244, 143);
+  background-color: #fcf48f;
 }
 .stella-employees .item__active {
-  background-color: rgb(252, 244, 143);
+  background-color: #fcf48f;
 }
 .stella-employees__face {
   border-radius: 50%;
@@ -537,6 +536,7 @@ body, html {
 }
 
 .stella-case__header {
+  padding-top: 100px;
   padding-left: 1300px;
 }
 .stella-case__nav {
@@ -545,6 +545,8 @@ body, html {
   padding-right: 120px;
   align-items: center;
   gap: 37px;
+  padding-bottom: 52px;
+  padding-top: 58px;
 }
 .stella-case__arrow-back {
   background: #282828;
@@ -566,11 +568,199 @@ body, html {
   display: flex;
   overflow: hidden;
 }
+.stella-case__item-body {
+  padding-top: 38px;
+  padding-left: 56px;
+}
 .stella-case__item {
   scrollbar-width: none;
-  flex-shrink: 0;
-  flex: 1 0 25%;
+  flex: 0 0 25%;
+  background-color: #272727;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 640px;
+}
+.stella-case__img {
+  height: 295px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.stella-case__text {
+  max-width: 300px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 126.19%;
+  color: #FFFFFF;
+  padding-bottom: 38px;
 }
 .stella-case__arrow img {
   border: none;
+  background-color: #fcf48f;
+  border-radius: 50%;
+}
+
+.stella-form2__header {
+  background-color: #1F1F1F;
+  padding: 45px 0 45px 72px;
+  color: #fff !important;
+}
+.stella-form2__body {
+  display: flex;
+}
+.stella-form2__form {
+  background-color: #272727;
+  max-width: 705px;
+  width: 100%;
+}
+.stella-form2__input-body {
+  padding: 58px 85px 0 70px;
+}
+.stella-form2__input {
+  display: block;
+  border: 1px solid #494949;
+  padding: 24px 0 24px 32px;
+  max-width: 553px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.stella-form2__input::-moz-placeholder {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 126.19%;
+  color: #FFFFFF;
+}
+.stella-form2__input::placeholder {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 126.19%;
+  color: #FFFFFF;
+}
+.stella-form2__sit {
+  padding-bottom: 140px;
+}
+.stella-form2__data {
+  padding-top: 30px;
+  color: #949494;
+  font-size: 18px;
+  line-height: 126.19%;
+  white-space: nowrap;
+  padding-left: 30px;
+  padding-bottom: 75px;
+}
+.stella-form2__btn {
+  background-color: #fcf48f;
+  font-weight: 500;
+  font-size: 28px;
+  color: #000000;
+  text-align: center;
+  width: 100%;
+  padding: 40px 0 40px 0;
+}
+.stella-form2__right {
+  width: 100%;
+  background-image: url("../src/img/form2/team.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 113px;
+  padding-right: 76px;
+}
+.stella-form2__title {
+  text-align: end;
+  color: #fcf48f;
+}
+.stella-form2__line {
+  margin-right: 0;
+}
+.stella-form2__line span {
+  margin-left: auto;
+  width: 255px;
+}
+
+.stella-info {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 113.19%;
+  color: #FFFFFF;
+}
+.stella-info img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+}
+.stella-info__body {
+  height: 560px;
+  display: flex;
+}
+.stella-info__map {
+  flex: 1 1 60%;
+}
+.stella-info__address {
+  position: relative;
+  flex: 1 1 20%;
+  background-color: #fcf48f;
+  color: #000000;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.stella-info__contacts {
+  flex: 1 1 20%;
+  display: flex;
+  flex-direction: column;
+}
+.stella-info__tel {
+  flex: 1 1 50%;
+  background: #353535;
+  padding-left: 30px;
+  padding-top: 20px;
+  position: relative;
+}
+.stella-info__mail {
+  position: relative;
+  flex: 1 1 50%;
+  background-color: #525151;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.stella-footer__body {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1F1F1F;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.stella-footer__main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.stella-footer__socials {
+  display: flex;
+  gap: 30px;
+}
+.stella-footer__socials img {
+  width: 50px;
+  height: 50px;
+}
+.stella-footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.stella-footer__item {
+  font-weight: 400;
+  font-size: 25px;
+}
+.stella-footer__policy {
+  font-weight: 400;
+  font-size: 25px;
 }
