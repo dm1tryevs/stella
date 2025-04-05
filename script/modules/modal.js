@@ -12,6 +12,10 @@ const modal = function(){
         
     });
 
+    document.body.addEventListener('keydown', function(e){
+        if(e.key == 'Escape') modalEl.style.display = 'none'
+    })
+    
 }
 
 export default modal;
