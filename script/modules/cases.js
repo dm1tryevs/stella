@@ -13,6 +13,8 @@ const cases = function(){
 
     let scroll = 0;
 
+    let itemsCount = 4 
+
     let currentPage = 1;
     page.innerHTML = 1 + '/' + Math.ceil(itemsAmount/4) 
 
@@ -21,19 +23,19 @@ const cases = function(){
         e.preventDefault()
        
         function scrollBack (){
-            scroll -= (casseItem[0].clientWidth * 4)
+            scroll -= (casseItem[0].clientWidth * itemsCount)
             currentPage == 1 ? currentPage = 1 : --currentPage;
         }
 
         function scrollForward (){
-            scroll += casseItem[0].clientWidth * 4
-            if(scroll >= casseItem[0].clientWidth * itemsAmount) scroll = casseItem[0].clientWidth * (itemsAmount - 4)
+            scroll += casseItem[0].clientWidth * itemsCount
+            if(scroll >= casseItem[0].clientWidth * (itemsAmount - itemsCount)){
+                scroll = casseItem[0].clientWidth * (itemsAmount - itemsCount)
+            } 
             if(currentPage < pageCount ){
                 currentPage++;
             }
         }
-        
-        console.log(scroll, casseItem[0].clientWidth *  (itemsAmount - 4));
         switch (e.target.closest('A').dataset.case){
             case 'arrow-forward':
                 scrollForward ()
@@ -42,11 +44,6 @@ const cases = function(){
                 scrollBack ()
                 break;
         }
-
-       /*  if(e.target.closest('A').dataset.case == 'arrow-forward' && currentPage > pageCount){
-            scroll = 0;
-            currentPage = 1;
-        } */
 
         page.innerHTML = currentPage + '/' + pageCount 
         caseItems.scrollTo({

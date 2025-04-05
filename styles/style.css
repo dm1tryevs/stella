@@ -420,6 +420,12 @@ body, html {
   line-height: 126.19%;
   color: #FFFFFF;
 }
+.stella-form__input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 126.19%;
+  color: #FFFFFF;
+}
 .stella-form__input::placeholder {
   font-weight: 300;
   font-size: 22px;
@@ -628,6 +634,12 @@ body, html {
   color: #FFFFFF;
 }
 .stella-form2__input::-moz-placeholder {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 126.19%;
+  color: #FFFFFF;
+}
+.stella-form2__input:-ms-input-placeholder {
   font-weight: 300;
   font-size: 22px;
   line-height: 126.19%;
