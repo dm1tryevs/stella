@@ -27,11 +27,13 @@ const cases = function(){
 
         function scrollForward (){
             scroll += casseItem[0].clientWidth * 4
+            if(scroll >= casseItem[0].clientWidth * itemsAmount) scroll = casseItem[0].clientWidth * (itemsAmount - 4)
             if(currentPage < pageCount ){
                 currentPage++;
             }
         }
         
+        console.log(scroll, casseItem[0].clientWidth *  (itemsAmount - 4));
         switch (e.target.closest('A').dataset.case){
             case 'arrow-forward':
                 scrollForward ()

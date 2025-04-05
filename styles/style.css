@@ -622,6 +622,10 @@ body, html {
   max-width: 553px;
   width: 100%;
   margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 126.19%;
+  color: #FFFFFF;
 }
 .stella-form2__input::-moz-placeholder {
   font-weight: 300;
